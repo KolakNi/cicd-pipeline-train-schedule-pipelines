@@ -5,7 +5,7 @@ stages {
   steps{
      echo 'some text and runing build automation'
      sh './gradlew build --no-deamon'
-     archiveArtifacts artifacts 'dist/trainSchedule.zip'
+     archiveArtifacts artifacts: 'dist/trainSchedule.zip'
    }
   }
 }
